@@ -44,7 +44,7 @@ export default {
 <template>
     <div class="max-w-md">
         <div class="relative border border-slate-200 rounded-md">
-            <input class="w-5/6 focus:outline-none" type="text" placeholder="Selecione o item">
+            <input class="w-5/6 focus:outline-none" v-on:input="filter = $event.target.value" type="text" placeholder="Selecione o item">
             <MagnifyingGlassIcon 
                 class="pointer-events-none h-5 w-5 text-slate-700 absolute top-1/2 transform -translate-y-1/2 right-4"
             />
