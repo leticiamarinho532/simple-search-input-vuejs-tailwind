@@ -6,7 +6,9 @@ export default {
 
 <template>
     <div>
-        List Item Component
+        <ul>
+            <li>Teste</li>
+        </ul>
     </div>
 </template>
 
