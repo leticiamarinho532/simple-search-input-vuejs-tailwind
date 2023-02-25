@@ -49,8 +49,13 @@ export default {
                 class="pointer-events-none h-5 w-5 text-slate-700 absolute top-1/2 transform -translate-y-1/2 right-4"
             />
         </div>
-        <div v-for="item of itemsWithFilter">
-            <ListItems :text="item.text"/>
+        <div class="grid grid-cols-3 gap-2">
+            <div 
+                class="list-none rounded-md hover:bg-gray-100 text-center"
+                v-for="item of itemsWithFilter"
+            >
+                <ListItems :text="item.text"/>
+            </div>
         </div>
     </div>
 </template>
