@@ -1,14 +1,12 @@
 <script lang="ts">
 export default {
-
+    props: ['text']
 }
 </script>
 
 <template>
     <div>
-        <ul>
-            <li>Teste</li>
-        </ul>
+        <li>{{ text }}</li>
     </div>
 </template>
 
